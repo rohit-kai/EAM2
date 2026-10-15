@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aurelia Hospitality &amp; Heritage &mdash; Quiet Luxury Since 1999</title>
+  <meta name="description" content="Aurelia Hospitality &amp; Heritage is a luxury hospitality group delivering landmark resorts, private clubs and fine dining across Paris, London and Como. 25 years of timeless hospitality." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml" />
+  <noscript>
+    <style>.reveal { opacity: 1 !important; transform: none !important; }</style>
+  </noscript>
+</head>
+<body id="top">
+
+  <!-- ============================= HEADER ============================= -->
+  <header class="nav" id="navbar">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html" aria-label="EAM Real Estate &amp; Hospitality Investment &mdash; home">
+        <img class="nav__logo" src="assets/images/eam-horizontal-platinum-gold.png" alt="EAM Real Estate &amp; Hospitality Investment" width="280" height="66" />
+      </a>
+
+      <nav class="nav__menu" id="navMenu" aria-label="Primary">
+        <a class="nav__link is-active" href="index.html">Home</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="history.html">Legacy &amp; History</a>
+        <a class="nav__link" href="#portfolio">Portfolio</a>
+        <a class="nav__link" href="#contact">Contact</a>
+        <a class="btn nav__cta" href="#contact">Book an Experience</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="nav__scrim" id="navScrim"></div>
+
+  <main>
+
+    <!-- ============================= HERO ============================= -->
+    <section class="hero" id="home">
+      <div class="hero__media" role="img" aria-label="Illuminated facade of a luxury hotel at dusk"></div>
+      <div class="hero__overlay"></div>
+
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <span class="eyebrow">Est. 1999 &bull; Paris &bull; London &bull; Como</span>
+          <h1 class="hero__title">
+            Timeless Hospitality,
+            <em>Quietly Perfected.</em>
+          </h1>
+          <p class="hero__text">
+            Aurelia is a luxury hospitality group crafting landmark resorts, private clubs and
+            fine dining rooms where architecture, service and silence are held to the same standard.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--solid" href="#contact">Book an Experience</a>
+            <a class="btn btn--ghost" href="history.html">Explore Our Legacy</a>
+          </div>
+        </div>
+
+        <!-- Integrated company info card -->
+        <aside class="info-card" aria-label="Company information">
+          <div class="info-card__crest">
+            <img src="assets/images/eam-horizontal-platinum-gold.png" alt="EAM Real Estate &amp; Hospitality Investment" width="310" height="72" />
+          </div>
+          <p class="info-card__tagline">&ldquo;Where every arrival becomes an inheritance.&rdquo;</p>
+          <div class="info-card__rule"></div>
+          <div class="info-card__meta">
+            <div class="meta-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <strong>Head Office</strong>
+                18 Rue de la Paix, 75002 Paris, France
+              </div>
+            </div>
+            <div class="meta-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div>
+                <strong>Reservations</strong>
+                <a href="tel:+33145000000">+33 1 45 00 00 00</a>
+              </div>
+            </div>
+            <div class="meta-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              <div>
+                <strong>Concierge Desk</strong>
+                <a href="mailto:concierge@aurelia-group.com">concierge@aurelia-group.com</a>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <a class="scroll-cue" id="scrollCue" href="#about" aria-label="Scroll to next section">
+        <span>Scroll</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+      </a>
+    </section>
+
+    <!-- ======================= LEADERSHIP / ABOUT ======================= -->
+    <section class="section leadership" id="about">
+      <div class="container">
+        <header class="leadership__head reveal">
+          <span class="eyebrow">About the Group</span>
+          <h2 class="section-title">The Minds Behind The Legacy</h2>
+          <p class="section-lead">
+            Two founders, one conviction: that true luxury is measured in restraint, in service
+            remembered years later, and in places that age with grace rather than fashion.
+          </p>
+        </header>
+
+        <div class="directors">
+          <!-- Director 1 -->
+          <article class="director reveal">
+            <div class="director__photo">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                   alt="Portrait of &Eacute;lodie Marchand, Co-Founder &amp; Managing Director" loading="lazy" width="600" height="800" />
+            </div>
+            <div class="director__body">
+              <span class="director__index">01 &mdash;</span>
+              <h3 class="director__name">&Eacute;lodie Marchand</h3>
+              <p class="director__role">Co-Founder &amp; Managing Director</p>
+              <p class="director__bio">
+                Trained in Parisian hotel administration and shaped by a decade in grand maison
+                operations, &Eacute;lodie leads Aurelia&rsquo;s design ethics and service doctrine. Her
+                philosophy is simple &mdash; build slowly, staff generously, and never let a guest
+                feel the machinery behind the calm.
+              </p>
+              <div class="director__links">
+                <a class="icon-link" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="&Eacute;lodie Marchand on LinkedIn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+                <a class="icon-link" href="mailto:elodie@aurelia-group.com" aria-label="Email &Eacute;lodie Marchand">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Director 2 -->
+          <article class="director reveal">
+            <div class="director__photo">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                   alt="Portrait of Julian Ashford-Vane, Chief Executive Officer" loading="lazy" width="600" height="800" />
+            </div>
+            <div class="director__body">
+              <span class="director__index">02 &mdash;</span>
+              <h3 class="director__name">Julian Ashford-Vane</h3>
+              <p class="director__role">Chief Executive Officer &amp; Executive Director</p>
+              <p class="director__bio">
+                Julian stewards the group&rsquo;s capital, acquisitions and landmark developments
+                across Europe. An advocate for patient investment, he has guided Aurelia from a
+                single lakeside estate to a <strong>$200M+</strong> portfolio of heritage assets
+                and flagship properties.
+              </p>
+              <div class="director__links">
+                <a class="icon-link" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="Julian Ashford-Vane on LinkedIn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+                <a class="icon-link" href="mailto:julian@aurelia-group.com" aria-label="Email Julian Ashford-Vane">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= STATS / TRACK RECORD ======================= -->
+    <section class="section stats" id="portfolio">
+      <div class="container">
+        <header class="stats__head reveal">
+          <span class="eyebrow">Milestones &amp; Track Record</span>
+          <h2 class="section-title">A Quarter-Century, Measured</h2>
+          <p class="section-lead" style="margin-inline:auto;">
+            Landmark projects, private memberships and half a million guests hosted &mdash;
+            the numbers behind a quiet reputation.
+          </p>
+        </header>
+
+        <div class="stats__grid" id="counters">
+          <div class="stat reveal">
+            <p class="stat__value">
+              <span class="counter" data-target="25">0</span><span class="stat__suffix">+</span>
+            </p>
+            <p class="stat__label">Years of Industry Excellence</p>
+          </div>
+          <div class="stat reveal">
+            <p class="stat__value">
+              <span class="stat__suffix" style="margin-right:4px;">$</span><span class="counter" data-target="200">0</span><span class="stat__suffix">M+</span>
+            </p>
+            <p class="stat__label">Portfolio Capital &amp; Landmark Projects</p>
+          </div>
+          <div class="stat reveal">
+            <p class="stat__value">
+              <span class="counter" data-target="500">0</span><span class="stat__suffix">K+</span>
+            </p>
+            <p class="stat__label">Global Guests Hosted</p>
+          </div>
+          <div class="stat reveal">
+            <p class="stat__value">
+              <span class="counter" data-target="98">0</span><span class="stat__suffix">%</span>
+            </p>
+            <p class="stat__label">Satisfaction &amp; Retention Rate</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== NEWSLETTER / CONCIERGE ==================== -->
+    <section class="section concierge" id="contact">
+      <div class="container">
+        <div class="concierge__card reveal">
+          <div class="concierge__intro">
+            <span class="eyebrow">Private Concierge</span>
+            <h2 class="concierge__title">Receive Curated Privileges &amp; Updates</h2>
+            <p class="section-lead">
+              Seasonal retreats, table releases at our fine dining rooms and invitations to
+              members-only previews &mdash; sent sparingly, and never shared.
+            </p>
+            <div class="concierge__support">
+              <span>Corporate proposals &amp; partnerships:</span>
+              <a href="mailto:partners@aurelia-group.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                partners@aurelia-group.com
+              </a>
+              <a href="tel:+33145000001">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                +33 1 45 00 00 01
+              </a>
+            </div>
+          </div>
+
+          <form class="subscribe" id="newsletterForm" novalidate>
+            <div class="field">
+              <label for="nlName" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Full name</label>
+              <input type="text" id="nlName" name="name" placeholder="Full name" autocomplete="name" />
+            </div>
+            <div class="field" id="emailField">
+              <label for="nlEmail" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Email address</label>
+              <input type="email" id="nlEmail" name="email" placeholder="Email address *" autocomplete="email" required aria-describedby="emailError" />
+              <span class="field__error" id="emailError" role="alert">Please enter a valid email address.</span>
+            </div>
+            <button class="btn btn--solid" type="submit" style="width:100%;">Subscribe</button>
+            <p class="subscribe__note">By subscribing you agree to our Privacy Policy. Unsubscribe at any time.</p>
+            <p class="subscribe__status" id="subscribeStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Col 1 - Brand story -->
+        <div>
+          <div class="footer__brand">
+            <img src="assets/images/eam-horizontal-platinum-gold.png" alt="EAM Real Estate &amp; Hospitality Investment" width="280" height="66" />
+          </div>
+          <p class="footer__about">
+            Founded in 1999, EAM Real Estate &amp; Hospitality Investment is a premier group
+            curating landmark hotels, branded residences and private retreats across Europe &mdash; built on
+            restraint, craft and generational stewardship.
+          </p>
+          <div class="badges">
+            <span class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M8.2 13.5 7 22l5-3 5 3-1.2-8.5"/></svg>
+              Forbes Travel Four-Star
+            </span>
+            <span class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              ISO 9001 Certified
+            </span>
+            <span class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9 12 2"/></svg>
+              Green Key Eco-Rating
+            </span>
+          </div>
+        </div>
+
+        <!-- Col 2 - Navigation -->
+        <div>
+          <h4 class="footer__title">Navigation</h4>
+          <ul class="footer__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About the Group</a></li>
+            <li><a href="history.html">Legacy &amp; History</a></li>
+            <li><a href="index.html#portfolio">Portfolio &amp; Track Record</a></li>
+            <li><a href="index.html#contact">Contact &amp; Inquiries</a></li>
+            <li><a href="history.html#timeline">Heritage Timeline</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 - Promotions & sister venues -->
+        <div>
+          <h4 class="footer__title">Privileges &amp; Sister Venues</h4>
+          <a class="promo" href="#contact">
+            <b>Special Winter Retreat Package</b>
+            <span>Como &amp; Courchevel &mdash; Nov &ndash; Feb</span>
+          </a>
+          <a class="promo" href="#contact">
+            <b>Private Club Membership</b>
+            <span>Priority tables, suites &amp; salons</span>
+          </a>
+          <a class="promo" href="#contact">
+            <b>Fine Dining Collection</b>
+            <span>Seven restaurants, two Michelin stars</span>
+          </a>
+        </div>
+
+        <!-- Col 4 - Contact -->
+        <div>
+          <h4 class="footer__title">Direct Contact</h4>
+          <ul class="contact-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+33145000000">+33 1 45 00 00 00</a>
+              </div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:concierge@aurelia-group.com">concierge@aurelia-group.com</a>
+              </div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              <div>
+                <strong>Concierge Hours</strong>
+                Daily &mdash; 07:00 to 23:00 CET
+              </div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <strong>Head Office</strong>
+                18 Rue de la Paix, 75002 Paris
+              </div>
+            </li>
+          </ul>
+
+          <div class="socials">
+            <a class="icon-link" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="Aurelia on LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a class="icon-link" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Aurelia on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
+            </a>
+            <a class="icon-link" href="mailto:concierge@aurelia-group.com" aria-label="Email Aurelia">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span id="year">2026</span> Aurelia Hospitality &amp; Heritage. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Preferences</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/newsletter.js" defer></script>
+</body>
+</html>

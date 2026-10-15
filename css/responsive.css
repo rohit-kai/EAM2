@@ -1,0 +1,360 @@
+/* =========================================================
+   AURELIA - Responsive layer
+   Breakpoints: 1200 / 1024 / 900 / 768 / 560 / 380
+   ========================================================= */
+
+/* ---------------------------------------------
+   Large desktop / 4K ultra-wide
+   --------------------------------------------- */
+@media (min-width: 1800px) {
+  :root {
+    --container: 1440px;
+  }
+
+  body {
+    font-size: 17px;
+  }
+
+  .hero__title {
+    font-size: clamp(4rem, 4.4vw, 6.2rem);
+  }
+}
+
+@media (min-width: 2400px) {
+  :root {
+    --container: 1680px;
+  }
+
+  .hero__media {
+    background-size: cover;
+  }
+}
+
+/* ---------------------------------------------
+   <= 1200px - compact desktops / small laptops
+   --------------------------------------------- */
+@media (max-width: 1200px) {
+  .footer__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+  }
+
+  .director {
+    grid-template-columns: 1fr;
+  }
+
+  .director__photo {
+    min-height: 300px;
+    max-height: 340px;
+  }
+
+  .director__photo::after {
+    background: linear-gradient(180deg, transparent 55%, rgba(18, 19, 22, 0.85) 100%);
+  }
+}
+
+/* ---------------------------------------------
+   <= 1024px - tablets landscape
+   --------------------------------------------- */
+@media (max-width: 1024px) {
+  :root {
+    --nav-h: 76px;
+  }
+
+  .nav__brand .nav__logo {
+    height: 50px;
+    max-width: 260px;
+  }
+
+  .nav__menu {
+    gap: 16px;
+  }
+
+  .nav__link {
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+  }
+
+  .nav__cta {
+    padding: 11px 18px;
+  }
+
+  .hero__grid {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .info-card {
+    max-width: 560px;
+  }
+
+  .stats__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px 24px;
+  }
+
+  .stat:nth-child(odd) + .stat::before {
+    display: block;
+  }
+
+  .stat:nth-child(2n + 1)::before {
+    display: none;
+  }
+
+  .concierge__card {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------------------------------------------
+   <= 900px - tablet portrait: mobile navigation
+   --------------------------------------------- */
+@media (max-width: 900px) {
+  .nav__toggle {
+    display: block;
+  }
+
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    height: 100dvh;
+    width: min(360px, 84vw);
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 4px;
+    padding: calc(var(--nav-h) + 24px) 30px 40px;
+    background: rgba(14, 15, 18, 0.97);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-left: 1px solid var(--line);
+    transform: translateX(100%);
+    transition: transform 0.42s var(--ease);
+    overflow-y: auto;
+    z-index: 95;
+  }
+
+  body.menu-open .nav__menu {
+    transform: translateX(0);
+  }
+
+  .nav__link {
+    padding: 17px 4px;
+    font-size: 0.84rem;
+    letter-spacing: 0.18em;
+    border-bottom: 1px solid var(--line-soft);
+  }
+
+  .nav__link::after {
+    display: none;
+  }
+
+  .nav__cta {
+    margin-top: 22px;
+    padding: 16px 24px;
+    font-size: 0.76rem;
+  }
+
+  .directors {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .director {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  }
+
+  .director__photo {
+    min-height: 320px;
+    max-height: none;
+  }
+
+  .director__photo::after {
+    background: linear-gradient(90deg, transparent 45%, rgba(18, 19, 22, 0.75) 100%);
+  }
+
+  /* Timeline collapses to a single left rail */
+  .timeline::before {
+    left: 7px;
+    transform: none;
+  }
+
+  .timeline__item,
+  .timeline__item:nth-child(odd),
+  .timeline__item:nth-child(even) {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+  }
+
+  .timeline__item:nth-child(odd) .timeline__dot,
+  .timeline__item:nth-child(even) .timeline__dot {
+    left: 0;
+    right: auto;
+    top: 30px;
+  }
+}
+
+/* ---------------------------------------------
+   <= 768px - small tablets / large phones
+   --------------------------------------------- */
+@media (max-width: 768px) {
+  :root {
+    --section-y: clamp(60px, 10vw, 84px);
+  }
+
+  .hero {
+    align-items: center;
+    padding-top: calc(var(--nav-h) + 40px);
+    padding-bottom: 110px;
+  }
+
+  .hero__title {
+    font-size: clamp(2.3rem, 9vw, 3.3rem);
+  }
+
+  .hero__actions .btn {
+    flex: 1 1 220px;
+  }
+
+  .scroll-cue {
+    bottom: 22px;
+  }
+
+  .director {
+    grid-template-columns: 1fr;
+  }
+
+  .director__photo {
+    min-height: 320px;
+    max-height: 420px;
+  }
+
+  .director__photo::after {
+    background: linear-gradient(180deg, transparent 55%, rgba(18, 19, 22, 0.85) 100%);
+  }
+
+  .stat + .stat::before {
+    display: none;
+  }
+
+  .subscribe__row {
+    flex-direction: column;
+  }
+
+  .subscribe__row .btn {
+    width: 100%;
+  }
+
+  .page-hero {
+    min-height: 62vh;
+  }
+
+  .milestone__media {
+    height: 190px;
+  }
+
+  .footer__bottom {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer__legal {
+    justify-content: center;
+  }
+}
+
+/* ---------------------------------------------
+   <= 560px - phones
+   --------------------------------------------- */
+@media (max-width: 560px) {
+  body {
+    font-size: 15.5px;
+  }
+
+  .nav__brand img {
+    width: 44px;
+  }
+
+  .nav__brand-name {
+    font-size: 1rem;
+    letter-spacing: 0.16em;
+  }
+
+  .nav__brand-sub {
+    font-size: 0.5rem;
+    letter-spacing: 0.22em;
+  }
+
+  .stats__grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .stat {
+    padding-bottom: 26px;
+    border-bottom: 1px solid var(--line-soft);
+  }
+
+  .stat:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .info-card::before {
+    inset: 7px;
+  }
+
+  .concierge__card {
+    padding: 30px 22px;
+  }
+
+  .quote-card {
+    padding: 30px 20px;
+  }
+
+  .badge {
+    font-size: 0.6rem;
+    padding: 7px 11px;
+  }
+}
+
+/* ---------------------------------------------
+   <= 380px - smallest supported screens (320px)
+   --------------------------------------------- */
+@media (max-width: 380px) {
+  :root {
+    --gutter: 18px;
+  }
+
+  .nav__brand .nav__logo {
+    height: 36px;
+    max-width: 175px;
+  }
+
+  .hero__title {
+    font-size: clamp(2rem, 11vw, 2.6rem);
+  }
+
+  .btn {
+    padding: 14px 22px;
+    letter-spacing: 0.14em;
+  }
+
+  .icon-link {
+    width: 38px;
+    height: 38px;
+  }
+
+  .footer__brand span {
+    font-size: 0.95rem;
+    letter-spacing: 0.14em;
+  }
+}

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 130" fill="none" width="540" height="130">
+  <defs>
+    <!-- Metallic Champagne Gold Gradient -->
+    <linearGradient id="eamGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0D4" />
+      <stop offset="35%" stop-color="#E2BE82" />
+      <stop offset="70%" stop-color="#C59F54" />
+      <stop offset="100%" stop-color="#967132" />
+    </linearGradient>
+
+    <!-- Deep Polished Sapphire Navy Gradient (Enhanced for dark & light visibility) -->
+    <linearGradient id="eamNavy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D4F7C" />
+      <stop offset="50%" stop-color="#1A3459" />
+      <stop offset="100%" stop-color="#0E213D" />
+    </linearGradient>
+
+    <!-- Light Accent for Navy Tower Highlights -->
+    <linearGradient id="navyHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4A75AA" />
+      <stop offset="100%" stop-color="#142A4A" />
+    </linearGradient>
+
+    <!-- Subtle Glow for Dark Luxury Backgrounds -->
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- ==================== LEFT: EMBLEM ==================== -->
+  <g transform="translate(10, 8)">
+    <!-- 4 Architectural Towers -->
+    <!-- Tower 1 (Far Left, Navy) -->
+    <polygon points="12,46 29,35 29,90 12,94" fill="url(#navyHighlight)" stroke="#6B93C4" stroke-width="0.75" />
+
+    <!-- Tower 2 (Center-Left, Tallest, Gold) -->
+    <polygon points="34,16 52,4 52,86 34,88" fill="url(#eamGold)" filter="url(#goldGlow)" />
+
+    <!-- Tower 3 (Center-Right, Mid-Tall, Gold) -->
+    <polygon points="57,28 73,42 73,88 57,86" fill="url(#eamGold)" />
+
+    <!-- Tower 4 (Far Right, Navy) -->
+    <polygon points="78,48 92,57 92,94 78,90" fill="url(#navyHighlight)" stroke="#6B93C4" stroke-width="0.75" />
+
+    <!-- Sweeping Arched Base (Swooshes) -->
+    <!-- Upper Navy Arch -->
+    <path d="M 0,93 Q 52,68 104,93 Q 52,76 0,93 Z" fill="url(#eamNavy)" stroke="#4A75AA" stroke-width="0.6" />
+
+    <!-- Middle Left Navy Segment -->
+    <path d="M 2,98 Q 28,88 48,93 L 42,98 Q 24,94 2,102 Z" fill="url(#eamNavy)" />
+
+    <!-- Middle Center Gold Strip -->
+    <path d="M 40,89 Q 55,86 70,91 L 64,96 Q 52,92 34,94 Z" fill="url(#eamGold)" />
+
+    <!-- Lower Gold Sweeping Bands -->
+    <path d="M 18,103 Q 50,91 96,104 L 92,108 Q 50,97 14,107 Z" fill="url(#eamGold)" />
+    <path d="M 38,103 Q 58,95 90,103 L 86,107 Q 56,100 34,107 Z" fill="url(#eamGold)" />
+  </g>
+
+  <!-- ==================== RIGHT: BRAND NAME & SUBTITLE ==================== -->
+  <g transform="translate(142, 12)">
+    <!-- Main Acronym: E A M -->
+    <!-- 'E' Letter (Polished Sapphire Navy with Gold Rim on Dark BG) -->
+    <text x="0" y="58" font-family="'Playfair Display', Georgia, serif" font-size="64" font-weight="700" letter-spacing="14" fill="#E8EDF5" stroke="#1A3459" stroke-width="1.2">E</text>
+    
+    <!-- 'A' Letter (Rich Champagne Gold) -->
+    <text x="96" y="58" font-family="'Playfair Display', Georgia, serif" font-size="64" font-weight="700" letter-spacing="14" fill="url(#eamGold)">A</text>
+    
+    <!-- 'M' Letter (Polished Sapphire Navy) -->
+    <text x="194" y="58" font-family="'Playfair Display', Georgia, serif" font-size="64" font-weight="700" letter-spacing="14" fill="#E8EDF5" stroke="#1A3459" stroke-width="1.2">M</text>
+
+    <!-- Luxury Hairline Divider with Center Diamond -->
+    <line x1="0" y1="78" x2="160" y2="78" stroke="url(#eamGold)" stroke-width="1" />
+    <polygon points="185,73 190,78 185,83 180,78" fill="url(#eamGold)" />
+    <line x1="210" y1="78" x2="370" y2="78" stroke="url(#eamGold)" stroke-width="1" />
+
+    <!-- Subtitle: REAL ESTATE & HOSPITALITY INVESTMENT -->
+    <text x="2" y="99" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600" letter-spacing="4.8" fill="url(#eamGold)">REAL ESTATE &amp; HOSPITALITY INVESTMENT</text>
+  </g>
+</svg>

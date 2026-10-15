@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 64" fill="none" width="280" height="64">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8D5B5" />
+      <stop offset="50%" stop-color="#C5A880" />
+      <stop offset="100%" stop-color="#9E7B4F" />
+    </linearGradient>
+    <linearGradient id="crestGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#C5A880" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Monogram Crest -->
+  <g transform="translate(10, 4)">
+    <!-- Outer Octagon / Diamond Luxury Frame -->
+    <polygon points="28,2 50,14 50,42 28,54 6,42 6,14" stroke="url(#goldGrad)" stroke-width="1.5" fill="#18191E" fill-opacity="0.6"/>
+    <polygon points="28,6 46,16 46,40 28,50 10,40 10,16" stroke="url(#goldGrad)" stroke-width="0.75" stroke-dasharray="2 1" fill="none"/>
+    
+    <!-- Stylized "A" Monogram with Crown Finial -->
+    <path d="M28 12 L38 42 L34 42 L31 33 L25 33 L22 42 L18 42 Z" fill="url(#goldGrad)" />
+    <polygon points="28,19 30,28 26,28" fill="#121316"/>
+    <!-- Horizontal Crossbar Accent -->
+    <line x1="22" y1="31" x2="34" y2="31" stroke="#E8D5B5" stroke-width="1.2"/>
+    <!-- Crown / Star Accent -->
+    <circle cx="28" cy="8" r="1.5" fill="#E8D5B5"/>
+    <circle cx="21" cy="11" r="1" fill="#C5A880"/>
+    <circle cx="35" cy="11" r="1" fill="#C5A880"/>
+  </g>
+
+  <!-- Brand Typography -->
+  <g transform="translate(74, 23)">
+    <text x="0" y="0" font-family="'Playfair Display', Georgia, serif" font-size="21" font-weight="600" letter-spacing="4.5" fill="#F8F9FA">AURELIA</text>
+    <text x="0" y="15" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="500" letter-spacing="3.8" fill="url(#goldGrad)">HOSPITALITY &amp; HERITAGE</text>
+    <text x="0" y="27" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-weight="400" letter-spacing="2.5" fill="#8E9099">EST. 1999 &bull; PARIS &bull; LONDON &bull; COMO</text>
+  </g>
+</svg>
